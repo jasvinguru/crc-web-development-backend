@@ -25,7 +25,7 @@ app.post("/send-email", async (req: Request, res: Response) => {
 
   try {
     const response = await resend.emails.send({
-      from: "CRC Run Club <onboarding@resend.dev>",
+      from: "CRC Run Club <jasvinguru@gmail.com>",
       to: userEmail,
       subject: `Registration Confirmed: ${eventTitle}`,
       html: `<p>Hi ${userName}, your registration is confirmed!</p>`,
